@@ -1,14 +1,42 @@
-<!DOCTYPE html> <html lang="hi"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>UCO Bank CSP - Banking Services</title> <style> * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; } body { background: #f5f7fa; color: #222; } header { background: #005baa; color: white; padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; } header h1 { font-size: 24px; } header span { font-size: 14px; } .hero { background: linear-gradient(135deg, #005baa, #0088d1); color: white; text-align: center; padding: 65px 20px; } .hero h2 { font-size: 36px; margin-bottom: 15px; } .hero p { font-size: 18px; margin-bottom: 25px; } .btn { display: inline-block; background: #ffb000; color: #111; padding: 13px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; margin: 5px; transition: 0.2s; } .btn:hover { background: #ffc533; transform: translateY(-1px); } .whatsapp-btn { background: #25d366; color: white; } .whatsapp-btn:hover { background: #1ebe5d; } .section { padding: 45px 7%; } .section h2 { text-align: center; color: #005baa; margin-bottom: 30px; } .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; } .card { background: white; padding: 25px; text-align: center; border-radius: 10px; box-shadow: 0 3px 12px rgba(0,0,0,0.08); } .card .icon { font-size: 38px; margin-bottom: 12px; } .card h3 { color: #005baa; margin-bottom: 8px; } .contact { background: white; text-align: center; } .contact p { margin: 10px 0; font-size: 17px; } .map-container { max-width: 900px; margin: auto; overflow: hidden; border-radius: 10px; box-shadow: 0 3px 12px rgba(0,0,0,0.12); } .map-container iframe { width: 100%; height: 450px; border: 0; display: block; } footer { background: #003b70; color: white; text-align: center; padding: 20px; font-size: 14px; } .notice { background: #fff3cd; color: #664d03; padding: 15px; margin: 25px 7%; border-radius: 8px; text-align: center; } @media (max-width: 600px) { .hero { padding: 50px 15px; } .hero h2 { font-size: 28px; } .hero p { font-size: 16px; } header { flex-direction: column; gap: 8px; text-align: center; } .btn { padding: 12px 20px; } .map-container iframe { height: 350px; } } </style> </head> <body> <header> <h1>UCO Bank CSP</h1> <span>Customer Service Point</span> </header> <section class="hero"> <h2>आपका भरोसेमंद बैंकिंग सेवा केंद्र</h2> <p>आसानी से उपलब्ध विभिन्न बैंकिंग सेवाएं</p>
-<a href="#services" class="btn">Services देखें</a>
-<a href="#contact" class="btn">Contact करें</a>
+<!DOCTYPE html> <html lang="hi"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>UCO Bank CSP | Customer Service Point</title> <meta name="description" content="UCO Bank CSP - Customer Service Point और उपलब्ध बैंकिंग सेवाओं की जानकारी।"> <style> * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; } html { scroll-behavior: smooth; } body { background: #f4f7fb; color: #222; line-height: 1.6; } /* HEADER */ header { background: #005baa; color: white; padding: 16px 7%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.15); } .brand h1 { font-size: 23px; } .brand p { font-size: 13px; opacity: 0.9; } nav a { color: white; text-decoration: none; margin-left: 22px; font-size: 14px; font-weight: bold; } nav a:hover { text-decoration: underline; } /* HERO */ .hero { background: linear-gradient(135deg, rgba(0,91,170,0.96), rgba(0,136,209,0.92)); color: white; text-align: center; padding: 90px 20px; } .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 7px 16px; border-radius: 30px; margin-bottom: 18px; font-size: 14px; } .hero h2 { font-size: 42px; margin-bottom: 15px; } .hero p { max-width: 700px; margin: 0 auto 28px; font-size: 18px; } .btn { display: inline-block; padding: 13px 23px; margin: 5px; border-radius: 7px; text-decoration: none; font-weight: bold; background: #ffb000; color: #111; transition: 0.2s; } .btn:hover { transform: translateY(-2px); opacity: 0.95; } .btn-outline { background: transparent; border: 2px solid white; color: white; } .btn-green { background: #25d366; color: white; } /* NOTICE */ .notice { max-width: 1100px; margin: 25px auto; padding: 16px 20px; background: #fff3cd; color: #664d03; border-left: 5px solid #ffb000; border-radius: 8px; } /* SECTIONS */ .section { padding: 65px 7%; } .section-title { text-align: center; color: #005baa; font-size: 30px; margin-bottom: 10px; } .section-subtitle { text-align: center; color: #666; margin-bottom: 35px; } /* SERVICES */ .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; max-width: 1150px; margin: auto; } .card { background: white; padding: 28px 22px; text-align: center; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,0.07); border: 1px solid #edf0f5; transition: 0.25s; } .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.11); } .icon { font-size: 42px; margin-bottom: 12px; } .card h3 { color: #005baa; margin-bottom: 8px; } .card p { color: #666; font-size: 14px; } /* CONTACT */ .contact-box { max-width: 800px; margin: auto; background: white; padding: 35px 25px; border-radius: 14px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); } .contact-item { margin: 14px 0; font-size: 17px; } .contact-item strong { color: #005baa; } /* MAP */ .map-container { max-width: 950px; margin: auto; overflow: hidden; border-radius: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); } .map-container iframe { width: 100%; height: 430px; border: 0; display: block; } /* FOOTER */ footer { background: #003b70; color: white; text-align: center; padding: 30px 20px; font-size: 14px; } .footer-note { max-width: 800px; margin: 12px auto 0; opacity: 0.85; font-size: 12px; } /* FLOATING BUTTONS */ .floating-buttons { position: fixed; right: 18px; bottom: 18px; display: flex; flex-direction: column; gap: 10px; z-index: 2000; } .float-btn { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-size: 23px; box-shadow: 0 4px 12px rgba(0,0,0,0.25); } .float-call { background: #005baa; } .float-whatsapp { background: #25d366; } /* MOBILE */ @media (max-width: 700px) { header { padding: 14px 5%; flex-direction: column; gap: 8px; text-align: center; } nav a { margin: 0 7px; font-size: 13px; } .hero { padding: 65px 17px; } .hero h2 { font-size: 30px; } .hero p { font-size: 16px; } .section { padding: 50px 5%; } .section-title { font-size: 26px; } .notice { margin: 20px 5%; } .map-container iframe { height: 350px; } } </style> </head> <body> <!-- HEADER --> <header> <div class="brand"> <h1>UCO Bank CSP</h1> <p>Customer Service Point</p> </div>
+<nav>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#location">Location</a>
+</nav>
 
-</section> <div class="notice"> ⚠️ <strong>सुरक्षा सूचना:</strong> अपना OTP, ATM PIN, Password या अन्य गोपनीय बैंकिंग जानकारी किसी के साथ साझा न करें। </div> <section class="section" id="services"> <h2>हमारी सेवाएं</h2>
+</header> <!-- HERO --> <section class="hero">
+<div class="hero-badge">
+  🏦 Customer Service Point
+</div>
+
+<h2>आपका भरोसेमंद बैंकिंग सेवा केंद्र</h2>
+
+<p>
+  उपलब्ध CSP सेवाओं और ग्राहक सहायता की जानकारी एक ही जगह पर।
+</p>
+
+<a href="#services" class="btn">
+  सेवाएं देखें
+</a>
+
+<a href="#contact" class="btn btn-outline">
+  संपर्क करें
+</a>
+
+</section> <!-- SECURITY NOTICE --> <div class="notice"> ⚠️ <strong>सुरक्षा सूचना:</strong> अपना OTP, ATM PIN, Password या अन्य गोपनीय बैंकिंग जानकारी किसी के साथ साझा न करें। </div> <!-- SERVICES --> <section class="section" id="services">
+<h2 class="section-title">हमारी सेवाएं</h2>
+
+<p class="section-subtitle">
+  उपलब्ध सेवाएं नियमों और सुविधा के अनुसार प्रदान की जाती हैं।
+</p>
+
 <div class="services">
 
   <div class="card">
     <div class="icon">💵</div>
     <h3>Cash Withdrawal</h3>
-    <p>नियमों के अनुसार नकद निकासी की सुविधा।</p>
+    <p>नियमों के अनुसार उपलब्ध नकद निकासी सुविधा।</p>
   </div>
 
   <div class="card">
@@ -26,49 +54,104 @@
   <div class="card">
     <div class="icon">💳</div>
     <h3>Balance Enquiry</h3>
-    <p>खाते में उपलब्ध बैलेंस की जानकारी।</p>
+    <p>उपलब्ध खाते के बैलेंस की जानकारी।</p>
   </div>
 
   <div class="card">
     <div class="icon">🏦</div>
     <h3>Banking Services</h3>
-    <p>उपलब्ध CSP सेवाओं के बारे में जानकारी प्राप्त करें।</p>
+    <p>उपलब्ध CSP सेवाओं के बारे में जानकारी।</p>
   </div>
 
   <div class="card">
     <div class="icon">📞</div>
     <h3>Customer Support</h3>
-    <p>सेवा संबंधी जानकारी के लिए हमसे संपर्क करें।</p>
+    <p>सेवा संबंधी जानकारी के लिए संपर्क करें।</p>
   </div>
 
 </div>
 
-</section> <section class="section contact" id="contact"> <h2>हमसे संपर्क करें</h2>
-<p>👤 <strong>CSP Name:</strong> UCO Bank CSP</p>
+</section> <!-- CONTACT --> <section class="section" id="contact">
+<h2 class="section-title">हमसे संपर्क करें</h2>
 
-<p>📍 <strong>Address:</strong> Bhuneshwar Chock Petrol Pump</p>
+<p class="section-subtitle">
+  किसी सेवा की जानकारी के लिए संपर्क करें।
+</p>
 
-<p>📱 <strong>Mobile:</strong> +91 9905409037</p>
+<div class="contact-box">
 
-<a href="tel:+919905409037" class="btn">
-  📞 Call Now
-</a>
+  <div class="contact-item">
+    👤 <strong>CSP Name:</strong> UCO Bank CSP
+  </div>
 
-<a href="https://wa.me/919905409037" 
-   class="btn whatsapp-btn"
-   target="_blank"
-   rel="noopener noreferrer">
-  💬 WhatsApp
-</a>
+  <div class="contact-item">
+    📍 <strong>Address:</strong> Bhuneshwar Chock Petrol Pump
+  </div>
 
-</section> <section class="section"> <h2>📍 हमारा स्थान</h2>
+  <div class="contact-item">
+    📱 <strong>Mobile:</strong> +91 9905409037
+  </div>
+
+  <div style="margin-top:25px;">
+
+    <a href="tel:+919905409037" class="btn">
+      📞 Call Now
+    </a>
+
+    <a
+      href="https://wa.me/919905409037"
+      class="btn btn-green"
+      target="_blank"
+      rel="noopener noreferrer">
+      💬 WhatsApp
+    </a>
+
+  </div>
+
+</div>
+
+</section> <!-- LOCATION --> <section class="section" id="location">
+<h2 class="section-title">📍 हमारा स्थान</h2>
+
+<p class="section-subtitle">
+  हमारे CSP सेवा केंद्र का स्थान
+</p>
+
 <div class="map-container">
+
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322.88449174068734!2d86.4001826894213!3d23.71094344718493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6980d720a594d%3A0x1279d3f3ee2d2f29!2sPC62%2B84Q%2C%20Jorapokhar%2C%20Jharkhand%20828112!5e0!3m2!1sen!2sin!4v1790486661894!5m2!1sen!2sin"
     allowfullscreen
     loading="lazy"
     referrerpolicy="strict-origin-when-cross-origin">
   </iframe>
+
 </div>
 
-</section> <footer> © 2026 UCO Bank CSP Service Point <br><br> यह वेबसाइट संबंधित CSP की सूचना/सेवा जानकारी के लिए है। UCO Bank की आधिकारिक वेबसाइट होने का दावा नहीं करती। </footer> </body> </html>
+</section> <!-- FOOTER --> <footer>
+© 2026 UCO Bank CSP Service Point
+
+<div class="footer-note">
+  यह वेबसाइट संबंधित CSP की सूचना/सेवा जानकारी के लिए है।
+  यह UCO Bank की आधिकारिक वेबसाइट होने का दावा नहीं करती।
+  बैंकिंग सेवाएं संबंधित नियमों और उपलब्धता के अनुसार हैं।
+</div>
+
+</footer> <!-- FLOATING BUTTONS --> <div class="floating-buttons">
+<a
+  href="tel:+919905409037"
+  class="float-btn float-call"
+  aria-label="Call Now">
+  📞
+</a>
+
+<a
+  href="https://wa.me/919905409037"
+  class="float-btn float-whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp">
+  💬
+</a>
+
+</div> </body> </html>
