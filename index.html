@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UCO Bank CSP - Banking Services</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #005baa;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    header span {
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #005baa, #0088d1);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffb000;
+      color: #111;
+      padding: 13px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .section {
+      padding: 45px 7%;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #005baa;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .card .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #005baa;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #003b70;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .notice {
+      background: #fff3cd;
+      color: #664d03;
+      padding: 15px;
+      margin: 25px 7%;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>UCO Bank CSP</h1>
+    <span>Customer Service Point</span>
+  </header>
+
+  <section class="hero">
+    <h2>आपका भरोसेमंद बैंकिंग सेवा केंद्र</h2>
+    <p>आसानी से उपलब्ध विभिन्न बैंकिंग सेवाएं</p>
+
+    <a href="#services" class="btn">Services देखें</a>
+    <a href="#contact" class="btn">Contact करें</a>
+  </section>
+
+  <div class="notice">
+    ⚠️ <strong>सुरक्षा सूचना:</strong>
+    अपना OTP, ATM PIN, Password या अन्य गोपनीय बैंकिंग जानकारी किसी के साथ साझा न करें।
+  </div>
+
+  <section class="section" id="services">
+    <h2>हमारी सेवाएं</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="icon">💵</div>
+        <h3>Cash Withdrawal</h3>
+        <p>नियमों के अनुसार नकद निकासी की सुविधा।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Cash Deposit</h3>
+        <p>उपलब्ध बैंकिंग सुविधा के अनुसार नकद जमा।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📄</div>
+        <h3>Mini Statement</h3>
+        <p>खाते के हाल के लेन-देन की जानकारी।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💳</div>
+        <h3>Balance Enquiry</h3>
+        <p>खाते में उपलब्ध बैलेंस की जानकारी।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏦</div>
+        <h3>Banking Services</h3>
+        <p>उपलब्ध CSP सेवाओं के बारे में जानकारी प्राप्त करें।</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📞</div>
+        <h3>Customer Support</h3>
+        <p>सेवा संबंधी जानकारी के लिए हमसे संपर्क करें।</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>हमसे संपर्क करें</h2>
+
+    <p>👤 <strong>CSP Name:</strong> uco bank csp</p>
+
+    <p>📍 <strong>Address:</strong> bhuneshwar chock petrol pump</p>
+
+    <p>📱 <strong>Mobile:</strong> +91 9905409037</p>
+
+    <a href="tel:+91XXXXXXXXXX" class="btn">📞 Call Now</a>
+
+    <a href="https://wa.me/91XXXXXXXXXX" class="btn">
+      💬 WhatsApp
+    </a>
+  </section>
+  <section class="section">
+  <h2>📍 हमारा स्थान</h2>
+
+  <div style="max-width:900px; margin:auto;">
+    
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d322.88449174068734!2d86.4001826894213!3d23.71094344718493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6980d720a594d%3A0x1279d3f3ee2d2f29!2sPC62%2B84Q%2C%20Jorapokhar%2C%20Jharkhand%20828112!5e0!3m2!1sen!2sin!4v1790486661894!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+  </div>
+</section> <footer>
+    © 2026 UCO Bank CSP Service Point
+    <br><br>
+    यह वेबसाइट संबंधित CSP की सूचना/सेवा जानकारी के लिए है।
+    UCO Bank की आधिकारिक वेबसाइट होने का दावा नहीं करती।
+  </footer>
+
+</body>
+</html>
